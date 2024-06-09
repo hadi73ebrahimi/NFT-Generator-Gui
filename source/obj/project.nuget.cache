@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "WLXia6y/gfs7bw1uacDo0oeTgIfz9Pc6IH1udJsV1sFef8NKUs+gSGOSOWN48OzGhA9w8HJTW39+2dgb3crwbg==",
+  "success": true,
+  "projectFilePath": "D:\\projects\\github\\NFT-Generator-Gui\\NFT-Generator-Gui\\source\\NftGeneratorGui.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hadi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: An error occurred while sending the request."
+    }
+  ]
+}
