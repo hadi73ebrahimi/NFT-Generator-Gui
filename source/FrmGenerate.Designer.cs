@@ -71,6 +71,7 @@
             BtnExportPath = new Button();
             LblExportPath = new Label();
             PnlGenerateError = new Panel();
+            LblGenerateError = new TextBox();
             BtnGenerateErrorCopy = new Button();
             BtnGenerateStart = new Button();
             LblGenerateProbability = new Label();
@@ -89,7 +90,13 @@
             tabPage4 = new TabPage();
             BtnSettingSave = new Button();
             BtnSettingLoad = new Button();
-            LblGenerateError = new TextBox();
+            tabPage5 = new TabPage();
+            label10 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            label13 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
             TcMain.SuspendLayout();
             tabPage1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -109,6 +116,7 @@
             groupBox10.SuspendLayout();
             groupBox9.SuspendLayout();
             tabPage4.SuspendLayout();
+            tabPage5.SuspendLayout();
             SuspendLayout();
             // 
             // TcMain
@@ -116,6 +124,7 @@
             TcMain.Controls.Add(tabPage1);
             TcMain.Controls.Add(tabPage2);
             TcMain.Controls.Add(tabPage3);
+            TcMain.Controls.Add(tabPage5);
             TcMain.Controls.Add(tabPage4);
             TcMain.Dock = DockStyle.Fill;
             TcMain.Location = new Point(0, 0);
@@ -269,9 +278,9 @@
             panel2.BackColor = Color.Gray;
             panel2.Controls.Add(label7);
             panel2.ForeColor = SystemColors.AppWorkspace;
-            panel2.Location = new Point(8, 7);
+            panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
-            panel2.Size = new Size(743, 407);
+            panel2.Size = new Size(748, 413);
             panel2.TabIndex = 6;
             // 
             // label7
@@ -533,6 +542,18 @@
             PnlGenerateError.TabIndex = 10;
             PnlGenerateError.Visible = false;
             // 
+            // LblGenerateError
+            // 
+            LblGenerateError.BackColor = Color.RosyBrown;
+            LblGenerateError.Dock = DockStyle.Top;
+            LblGenerateError.Location = new Point(0, 0);
+            LblGenerateError.Multiline = true;
+            LblGenerateError.Name = "LblGenerateError";
+            LblGenerateError.ReadOnly = true;
+            LblGenerateError.ScrollBars = ScrollBars.Vertical;
+            LblGenerateError.Size = new Size(296, 166);
+            LblGenerateError.TabIndex = 10;
+            // 
             // BtnGenerateErrorCopy
             // 
             BtnGenerateErrorCopy.Location = new Point(100, 174);
@@ -705,17 +726,68 @@
             BtnSettingLoad.Text = "Load";
             BtnSettingLoad.UseVisualStyleBackColor = true;
             // 
-            // LblGenerateError
+            // tabPage5
             // 
-            LblGenerateError.BackColor = Color.RosyBrown;
-            LblGenerateError.Dock = DockStyle.Top;
-            LblGenerateError.Location = new Point(0, 0);
-            LblGenerateError.Multiline = true;
-            LblGenerateError.Name = "LblGenerateError";
-            LblGenerateError.ReadOnly = true;
-            LblGenerateError.ScrollBars = ScrollBars.Vertical;
-            LblGenerateError.Size = new Size(296, 166);
-            LblGenerateError.TabIndex = 10;
+            tabPage5.Controls.Add(textBox2);
+            tabPage5.Controls.Add(textBox1);
+            tabPage5.Controls.Add(label13);
+            tabPage5.Controls.Add(button2);
+            tabPage5.Controls.Add(button1);
+            tabPage5.Controls.Add(label10);
+            tabPage5.Location = new Point(4, 24);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Size = new Size(757, 422);
+            tabPage5.TabIndex = 4;
+            tabPage5.Text = "FixMetaData";
+            tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            label10.Location = new Point(139, 30);
+            label10.Name = "label10";
+            label10.Size = new Size(470, 36);
+            label10.TabIndex = 0;
+            label10.Text = "label10";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(139, 69);
+            button1.Name = "button1";
+            button1.Size = new Size(174, 49);
+            button1.TabIndex = 1;
+            button1.Text = "Select Metadata folder";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(279, 361);
+            button2.Name = "button2";
+            button2.Size = new Size(174, 53);
+            button2.TabIndex = 2;
+            button2.Text = "Fix it";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            label13.Location = new Point(332, 69);
+            label13.Name = "label13";
+            label13.Size = new Size(277, 49);
+            label13.TabIndex = 3;
+            label13.Text = "label13";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(197, 146);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(353, 23);
+            textBox1.TabIndex = 4;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(197, 198);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(353, 23);
+            textBox2.TabIndex = 5;
             // 
             // FrmGenerate
             // 
@@ -752,6 +824,8 @@
             groupBox9.ResumeLayout(false);
             groupBox9.PerformLayout();
             tabPage4.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
+            tabPage5.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -819,5 +893,12 @@
         private Panel panel2;
         private Label label7;
         private TextBox LblGenerateError;
+        private TabPage tabPage5;
+        private Button button2;
+        private Button button1;
+        private Label label10;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label13;
     }
 }
